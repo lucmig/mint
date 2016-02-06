@@ -10,9 +10,7 @@ namespace mint.data
 
   public interface IData
   {
-    void SaveDoc(string collection, string doc);
-
-    string GetDoc(string collection, string id);
+    void SaveNode(Node node);
 
     IEnumerable<Node> GetAllNodes();
 

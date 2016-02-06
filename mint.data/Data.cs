@@ -8,7 +8,9 @@ using MongoDB.Driver;
 
 namespace mint.data
 {
-  public class Data
+  using models;
+
+  public class Data : IData
   {
     private const string mongoUri = "mongodb://api:api@ds059125.mongolab.com:59125/mint";
 
@@ -20,6 +22,26 @@ namespace mint.data
       var url = new MongoUrl(mongoUri);
       _client = new MongoClient(url);
       _db = _client.GetDatabase(url.DatabaseName);
+    }
+
+    public void DeleteAll()
+    {
+      throw new NotImplementedException();
+    }
+
+    public void DeleteNode(string id)
+    {
+      throw new NotImplementedException();
+    }
+
+    public IEnumerable<Node> GetAllNodes()
+    {
+      throw new NotImplementedException();
+    }
+
+    public void SaveNode(Node node)
+    {
+      throw new NotImplementedException();
     }
   }
 }
