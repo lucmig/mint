@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace mint.models
 {
+  [Serializable, XmlRoot("node")]
   public class Node
   {
-    public string Id { get; set; }
-    public string Label { get; set; }
-    public IEnumerable<string> AdjacentNodes { get; set; }
+    public string id { get; set; }
+    public string label { get; set; }
+    [XmlArray]
+    [XmlArrayItem("id")]
+    public List<string> adjacentNodes { get; set; }
   }
 }

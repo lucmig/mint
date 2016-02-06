@@ -1,8 +1,6 @@
-﻿using mint.data;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MongoDB.Driver;
-using MongoDB.Driver.Linq;
 
 namespace mint.data.tests
 {
@@ -38,7 +36,7 @@ namespace mint.data.tests
     [TestMethod()]
     public void DeleteAllTest()
     {
-      var nodes = new Node[] { new Node() { Id = "a1", Label = "test 1" }, new Node() { Id = "a2", Label = "test 2" } };
+      var nodes = new Node[] { new Node() { id = "a1", label = "test 1" }, new Node() { id = "a2", label = "test 2" } };
       _db.GetCollection<Node>("node").InsertMany(nodes);
       var dta = new Data(uri);
       dta.DeleteAll();
@@ -49,7 +47,7 @@ namespace mint.data.tests
     [TestMethod()]
     public void DeleteNodeTest()
     {
-      var nodes = new Node[] { new Node() { Id = "a1", Label = "test 1" }, new Node() { Id = "a2", Label = "test 2" } };
+      var nodes = new Node[] { new Node() { id = "a1", label = "test 1" }, new Node() { id = "a2", label = "test 2" } };
       _db.GetCollection<Node>("node").InsertMany(nodes);
       var dta = new Data(uri);
       dta.DeleteNode("a1");
@@ -60,7 +58,7 @@ namespace mint.data.tests
     [TestMethod()]
     public void GetAllNodesTest()
     {
-      var nodes = new Node[] { new Node() { Id = "a1", Label = "test 1" }, new Node() { Id = "a2", Label = "test 2" } };
+      var nodes = new Node[] { new Node() { id = "a1", label = "test 1" }, new Node() { id = "a2", label = "test 2" } };
       _db.GetCollection<Node>("node").InsertMany(nodes);
       var dta = new Data(uri);
       var result = dta.GetAllNodes();
@@ -71,7 +69,7 @@ namespace mint.data.tests
     public void SaveNodeTest()
     {
       var dta = new Data(uri);
-      dta.SaveNode(new Node() { Id = "a3", Label = "test 3" });
+      dta.SaveNode(new Node() { id = "a3", label = "test 3" });
       var result = _db.GetCollection<Node>("node").AsQueryable<Node>().ToList();
       Assert.AreEqual(1, result.Count);
     }

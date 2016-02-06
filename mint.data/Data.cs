@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using System.ComponentModel.Composition;
 
 namespace mint.data
 {
   using models;
 
+  [Export(typeof(IData))]
   public class Data : IData
   {
     private const string mongoUri = "mongodb://api:api@ds059125.mongolab.com:59125/mint";
@@ -37,7 +39,7 @@ namespace mint.data
     public void DeleteNode(string id)
     {
       var col = _db.GetCollection<Node>("node");
-      col.DeleteOne<Node>(n => n.Id == id);
+      col.DeleteOne<Node>(n => n.id == id);
     }
 
     public IEnumerable<Node> GetAllNodes()

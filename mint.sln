@@ -29,6 +29,34 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.utilities.dataloader",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.data.tests", "mint.data.tests\mint.data.tests.csproj", "{A6CD3DD1-16A2-4CF0-B8F2-A260269BB22D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC216056-0457-4576-BF50-4360EAFF50FB}"
+	ProjectSection(SolutionItems) = preProject
+		Input data\amazon.xml = Input data\amazon.xml
+		Input data\apple.xml = Input data\apple.xml
+		Input data\ebay.xml = Input data\ebay.xml
+		Input data\facebook.xml = Input data\facebook.xml
+		Input data\google.xml = Input data\google.xml
+		Input data\ibm.xml = Input data\ibm.xml
+		Input data\intel.xml = Input data\intel.xml
+		Input data\microsoft.xml = Input data\microsoft.xml
+		Input data\paypal.xml = Input data\paypal.xml
+		Input data\yahoo.xml = Input data\yahoo.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input Data", "Input Data", "{1E81D1DB-44B6-4A98-A77E-F9C49E33B5FF}"
+	ProjectSection(SolutionItems) = preProject
+		Input data\amazon.xml = Input data\amazon.xml
+		Input data\apple.xml = Input data\apple.xml
+		Input data\ebay.xml = Input data\ebay.xml
+		Input data\facebook.xml = Input data\facebook.xml
+		Input data\google.xml = Input data\google.xml
+		Input data\ibm.xml = Input data\ibm.xml
+		Input data\intel.xml = Input data\intel.xml
+		Input data\microsoft.xml = Input data\microsoft.xml
+		Input data\paypal.xml = Input data\paypal.xml
+		Input data\yahoo.xml = Input data\yahoo.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

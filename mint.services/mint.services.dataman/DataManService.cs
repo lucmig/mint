@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Xml.Serialization;
+using System.IO;
+using System.ComponentModel.Composition;
 
 namespace mint.services.dataman
 {
@@ -11,29 +9,22 @@ namespace mint.services.dataman
 
   public class DataManService : IDataManService
   {
-    public void DeleteAll()
+    private readonly IData _data;
+
+    [ImportingConstructor]
+    public DataManService(IData data)
     {
-      throw new NotImplementedException();
+      _data = data;
     }
 
-    public void DeleteNode(string id)
+    public void SaveNode(string nodeXml)
     {
-      throw new NotImplementedException();
-    }
-
-    public IEnumerable<Node> GetAllNodes()
-    {
-      throw new NotImplementedException();
-    }
-
-    public Node GetNodeById(string id)
-    {
-      throw new NotImplementedException();
-    }
-
-    public void SaveNode(Node node)
-    {
-      throw new NotImplementedException();
+      var ser = new XmlSerializer(typeof(Node));
+      using (var reader = new StringReader(nodeXml))
+      {
+        var node = (Node)ser.Deserialize(reader);
+        _data.SaveNode(node);
+      }
     }
   }
 }

@@ -60,6 +60,20 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\mint.data\mint.data.csproj">
+      <Project>{906c8f90-1a78-4612-9193-125692675769}</Project>
+      <Name>mint.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mint.models\mint.models.csproj">
+      <Project>{5c1325f9-64f5-4757-b16f-9a0a35481347}</Project>
+      <Name>mint.models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\mint.services.dataman\mint.services.dataman.csproj">
+      <Project>{B3FC6309-61F7-4019-8735-10B4C513E411}</Project>
+      <Name>mint.services.dataman</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
