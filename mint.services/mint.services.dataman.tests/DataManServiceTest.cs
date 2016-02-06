@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace mint.services.dataman.tests
 {
   [TestClass]
-  public class UnitTest1
+  public class DataManServiceTest
   {
     [TestMethod]
     public void TestMethod1()
