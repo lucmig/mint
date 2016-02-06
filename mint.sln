@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.models", "mint.models\mint.models.csproj", "{5C1325F9-64F5-4757-B16F-9A0A35481347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.data", "mint.data\mint.data.csproj", "{906C8F90-1A78-4612-9193-125692675769}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{E258BBA2-D920-451F-AE62-7A2D1E47B622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.services.dataman", "mint.services.dataman\mint.services.dataman.csproj", "{B3FC6309-61F7-4019-8735-10B4C513E411}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C1325F9-64F5-4757-B16F-9A0A35481347}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1325F9-64F5-4757-B16F-9A0A35481347}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1325F9-64F5-4757-B16F-9A0A35481347}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1325F9-64F5-4757-B16F-9A0A35481347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906C8F90-1A78-4612-9193-125692675769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906C8F90-1A78-4612-9193-125692675769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906C8F90-1A78-4612-9193-125692675769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906C8F90-1A78-4612-9193-125692675769}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FC6309-61F7-4019-8735-10B4C513E411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FC6309-61F7-4019-8735-10B4C513E411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FC6309-61F7-4019-8735-10B4C513E411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FC6309-61F7-4019-8735-10B4C513E411}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3FC6309-61F7-4019-8735-10B4C513E411} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
+	EndGlobalSection
+EndGlobal
