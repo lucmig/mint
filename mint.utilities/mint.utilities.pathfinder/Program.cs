@@ -29,11 +29,10 @@ namespace mint.utilities.pathfinder
             Console.WriteLine();
           }
         }
-        Console.ReadKey();
       }
       catch (Exception ex)
       {
-        Console.WriteLine(string.Format("Error: {0}", ex.Message));
+        Console.WriteLine("Path could not be calculated.");
       }
     }
   }
