@@ -55,10 +55,6 @@
       <Project>{5c1325f9-64f5-4757-b16f-9a0a35481347}</Project>
       <Name>mint.models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\mint.utilities\mint.utilities.dataloader\mint.utilities.dataloader.csproj">
-      <Project>{b24f837a-4b21-403b-957e-806a30b960b4}</Project>
-      <Name>mint.utilities.dataloader</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

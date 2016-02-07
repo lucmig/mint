@@ -21,8 +21,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.services.calc", "mint.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.services.calc.tests", "mint.services\mint.services.calc.tests\mint.services.calc.tests.csproj", "{D4307CE3-2203-4635-A157-D1327419102D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.services.host", "mint.services\mint.services.host\mint.services.host.csproj", "{CB442CB7-7F66-4511-B625-45EA6E4F80F1}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utils", "utils", "{84ACAC51-D649-4C53-AE3E-C4864D3F7664}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.utilities.dataloader", "mint.utilities\mint.utilities.dataloader\mint.utilities.dataloader.csproj", "{B24F837A-4B21-403B-957E-806A30B960B4}"
@@ -56,6 +54,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input Data", "Input Data", 
 		Input data\paypal.xml = Input data\paypal.xml
 		Input data\yahoo.xml = Input data\yahoo.xml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.services.host", "mint.services\mint.services.host\mint.services.host.csproj", "{BA718F99-A1FD-487E-8B18-E8C71E24725B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,10 +95,6 @@ Global
 		{D4307CE3-2203-4635-A157-D1327419102D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4307CE3-2203-4635-A157-D1327419102D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4307CE3-2203-4635-A157-D1327419102D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CB442CB7-7F66-4511-B625-45EA6E4F80F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CB442CB7-7F66-4511-B625-45EA6E4F80F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CB442CB7-7F66-4511-B625-45EA6E4F80F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CB442CB7-7F66-4511-B625-45EA6E4F80F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B24F837A-4B21-403B-957E-806A30B960B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B24F837A-4B21-403B-957E-806A30B960B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B24F837A-4B21-403B-957E-806A30B960B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -107,6 +103,10 @@ Global
 		{A6CD3DD1-16A2-4CF0-B8F2-A260269BB22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6CD3DD1-16A2-4CF0-B8F2-A260269BB22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6CD3DD1-16A2-4CF0-B8F2-A260269BB22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -118,7 +118,7 @@ Global
 		{2EBD06E7-E80D-4151-80BD-F891DF508BCC} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
 		{92F916BD-F07F-4E92-9220-FCD5AD2197B0} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
 		{D4307CE3-2203-4635-A157-D1327419102D} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
-		{CB442CB7-7F66-4511-B625-45EA6E4F80F1} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
 		{B24F837A-4B21-403B-957E-806A30B960B4} = {84ACAC51-D649-4C53-AE3E-C4864D3F7664}
+		{BA718F99-A1FD-487E-8B18-E8C71E24725B} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,8 @@
 ﻿using System.Xml.Serialization;
 using System.IO;
+using System.Reflection;
 using System.ComponentModel.Composition;
+using System.ComponentModel.Composition.Hosting;
 
 namespace mint.services.dataman
 {
@@ -9,13 +11,19 @@ namespace mint.services.dataman
 
   public class DataManService : IDataManService
   {
-    private readonly IData _data;
+    private readonly CompositionContainer _container;
 
-    [ImportingConstructor]
-    public DataManService(IData data)
+    public DataManService()
     {
-      _data = data;
+      var catalog = new AggregateCatalog();
+      catalog.Catalogs.Add(new AssemblyCatalog(Assembly.GetExecutingAssembly()));
+      catalog.Catalogs.Add(new AssemblyCatalog(typeof(IData).Assembly));
+      _container = new CompositionContainer(catalog);
+      _container.SatisfyImportsOnce(this);
     }
+
+    [Import]
+    private IData _data { get; set; }
 
     public void SaveNode(string nodeXml)
     {
