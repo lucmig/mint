@@ -15,12 +15,6 @@ namespace mint.services.dataman.tests
     public void SaveNodeTest()
     {
       var nodeXml = "<node><id>9</id><label>Amazon</label><adjacentNodes><id>10</id></adjacentNodes></node>";
-      //var nd = new Node()
-      //{
-      //  Id = "9",
-      //  Label = "Amazon",
-      //  AdjacentNodes = new string[] { "10" }
-      //};
       var mockData = new Mock<IData>();
       mockData.Setup(d => d.SaveNode(It.IsAny<Node>()))
               .Callback((Node node) =>

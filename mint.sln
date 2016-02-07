@@ -57,6 +57,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input Data", "Input Data", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.services.host", "mint.services\mint.services.host\mint.services.host.csproj", "{BA718F99-A1FD-487E-8B18-E8C71E24725B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mint.utilities.pathfinder", "mint.utilities\mint.utilities.pathfinder\mint.utilities.pathfinder.csproj", "{4F9D172A-2C45-4A52-A113-EE33E40AC601}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -107,6 +109,10 @@ Global
 		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA718F99-A1FD-487E-8B18-E8C71E24725B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9D172A-2C45-4A52-A113-EE33E40AC601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9D172A-2C45-4A52-A113-EE33E40AC601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9D172A-2C45-4A52-A113-EE33E40AC601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9D172A-2C45-4A52-A113-EE33E40AC601}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,5 +126,6 @@ Global
 		{D4307CE3-2203-4635-A157-D1327419102D} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
 		{B24F837A-4B21-403B-957E-806A30B960B4} = {84ACAC51-D649-4C53-AE3E-C4864D3F7664}
 		{BA718F99-A1FD-487E-8B18-E8C71E24725B} = {E258BBA2-D920-451F-AE62-7A2D1E47B622}
+		{4F9D172A-2C45-4A52-A113-EE33E40AC601} = {84ACAC51-D649-4C53-AE3E-C4864D3F7664}
 	EndGlobalSection
 EndGlobal

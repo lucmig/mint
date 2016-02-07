@@ -58,6 +58,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\mint.data\mint.data.csproj">
+      <Project>{906c8f90-1a78-4612-9193-125692675769}</Project>
+      <Name>mint.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\mint.models\mint.models.csproj">
+      <Project>{5c1325f9-64f5-4757-b16f-9a0a35481347}</Project>
+      <Name>mint.models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\mint.services.calc\mint.services.calc.csproj">
       <Project>{92F916BD-F07F-4E92-9220-FCD5AD2197B0}</Project>
       <Name>mint.services.calc</Name>

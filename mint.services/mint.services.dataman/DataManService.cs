@@ -12,6 +12,7 @@ namespace mint.services.dataman
   public class DataManService : IDataManService
   {
     private readonly CompositionContainer _container;
+    private readonly IData _data;
 
     public DataManService()
     {
@@ -20,10 +21,16 @@ namespace mint.services.dataman
       catalog.Catalogs.Add(new AssemblyCatalog(typeof(IData).Assembly));
       _container = new CompositionContainer(catalog);
       _container.SatisfyImportsOnce(this);
+      _data = Data;
+    }
+
+    public DataManService(IData data)
+    {
+      _data = data;
     }
 
     [Import]
-    private IData _data { get; set; }
+    private IData Data { get; set; }
 
     public void SaveNode(string nodeXml)
     {
