@@ -11,6 +11,6 @@ Command line utilities located in utils folder
 Hosted Mongo DB Sandbox
 
 ```
-url: https://mongolab.com/login/
+url: https://mlab.com/login/
 login: massint/password1
 ```
